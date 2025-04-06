@@ -15,7 +15,7 @@ ChefPal is a Streamlit-based multi-agent web application leveraging OpenAI's GPT
 
 - **Streamlit**: Interactive UI framework.
 - **React**: Used for building the real-time voice-based cooking assistant.
-- **OpenAI GPT-4o-mini**: AI for natural language processing.
+- **OpenAI GPT-4o**: AI for natural language processing.
 - **LangChain**: Integration with language models.
 - **Matplotlib**: Nutritional data visualization.
 
