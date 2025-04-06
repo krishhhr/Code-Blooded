@@ -1,77 +1,67 @@
-👩‍🍳 ChefPal: Smart AI Cooking Companion
+# 👩‍🍳 ChefPal: Smart AI Cooking Companion
 
 ChefPal is a Streamlit-based multi-agent web application leveraging OpenAI's GPT-4o-mini model to provide personalized, nutritional recipe recommendations, step-by-step cooking guidance, and nutritional insights.
 
-🚀 Features
+## 🚀 Features
 
-Intelligent Ingredient Parsing: Extract detailed nutritional data and tags from raw ingredients.
+- **Intelligent Ingredient Parsing**: Extract detailed nutritional data and tags from raw ingredients.
+- **Allergy and Diet Filtering**: Automatically filters recipes according to allergies and dietary restrictions.
+- **Customized Recipe Recommendations**: Unique recipes tailored to individual taste preferences.
+- **Interactive Cooking Assistant**: Step-by-step cooking instructions and real-time voice assistance.
+- **Nutritional Visualization**: Clear nutritional breakdown presented through intuitive charts.
+- **Multi-Agent System**: Seamlessly integrates multiple AI agents to optimize recipe recommendation, filtering, and cooking assistance.
 
-Allergy and Diet Filtering: Automatically filters recipes according to allergies and dietary restrictions.
+## 🔧 Technologies Used
 
-Customized Recipe Recommendations: Unique recipes tailored to individual taste preferences.
+- **Streamlit**: Interactive UI framework.
+- **React**: Used for building the real-time voice-based cooking assistant.
+- **OpenAI GPT-4o-mini**: AI for natural language processing.
+- **LangChain**: Integration with language models.
+- **Matplotlib**: Nutritional data visualization.
 
-Interactive Cooking Assistant: Step-by-step cooking instructions and real-time voice assistance.
+## 🛠️ Setup Instructions
 
-Nutritional Visualization: Clear nutritional breakdown presented through intuitive charts.
+- **Step 1: Clone the Repository**
+  ```bash
+  git clone <repository_url>
+  cd <repository_directory>
+  ```
 
-Multi-Agent System: Seamlessly integrates multiple AI agents to optimize recipe recommendation, filtering, and cooking assistance.
+- **Step 2: Install Dependencies**
+  ```bash
+  pip install streamlit langchain_openai openai matplotlib
+  ```
 
-🔧 Technologies Used
+- **Step 3: Configure API Key**
+  Create a `.env` file:
+  ```env
+  OPENAI_API_KEY=your_api_key_here
+  ```
 
-Streamlit: Interactive UI framework.
+- **Step 4: Run the Application**
+  ```bash
+  streamlit run your_script_name.py
+  ```
+  The application opens automatically in your default browser.
 
-React: Used for building the real-time voice-based cooking assistant.
+## 🌐 Usage
 
-OpenAI GPT-4o-mini: AI for natural language processing.
+- Enter ingredients in the sidebar.
+- Specify allergies, dietary, and taste preferences.
+- Click **Recommend Recipes**.
+- Select recipes for detailed cooking instructions and nutritional insights.
+- Use the **Live Cooking Assistant** for hands-free cooking guidance.
 
-LangChain: Integration with language models.
+## 🎙️ Live Cooking Assistant Integration
 
-Matplotlib: Nutritional data visualization.
+- Real-time voice interface.
+- Run your local voice-assistant server at:
+  ```
+  http://localhost:3000
+  ```
 
-🛠️ Setup Instructions
+## 🌟 Acknowledgments
 
-Step 1: Clone the Repository
+- OpenAI GPT models
+- Streamlit and LangChain communities
 
-git clone <repository_url>
-cd <repository_directory>
-
-Step 2: Install Dependencies
-
-pip install streamlit langchain_openai openai matplotlib
-
-Step 3: Configure API Key
-Create a .env file:
-
-OPENAI_API_KEY=your_api_key_here
-
-Step 4: Run the Application
-
-streamlit run your_script_name.py
-
-The application opens automatically in your default browser.
-
-🌐 Usage
-
-Enter ingredients in the sidebar.
-
-Specify allergies, dietary, and taste preferences.
-
-Click Recommend Recipes.
-
-Select recipes for detailed cooking instructions and nutritional insights.
-
-Use the Live Cooking Assistant for hands-free cooking guidance.
-
-🎙️ Live Cooking Assistant Integration
-
-Real-time voice interface.
-
-Run your local voice-assistant server at:
-
-http://localhost:3000
-
-🌟 Acknowledgments
-
-OpenAI GPT models
-
-Streamlit and LangChain communities
