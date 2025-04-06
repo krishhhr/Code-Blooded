@@ -1,39 +1,77 @@
-# OpenAI Realtime Console
+👩‍🍳 ChefPal: Smart AI Cooking Companion
 
-This is an example application showing how to use the [OpenAI Realtime API](https://platform.openai.com/docs/guides/realtime) with [WebRTC](https://platform.openai.com/docs/guides/realtime-webrtc).
+ChefPal is a Streamlit-based multi-agent web application leveraging OpenAI's GPT-4o-mini model to provide personalized, nutritional recipe recommendations, step-by-step cooking guidance, and nutritional insights.
 
-## Installation and usage
+🚀 Features
 
-Before you begin, you'll need an OpenAI API key - [create one in the dashboard here](https://platform.openai.com/settings/api-keys). Create a `.env` file from the example file and set your API key in there:
+Intelligent Ingredient Parsing: Extract detailed nutritional data and tags from raw ingredients.
 
-```bash
-cp .env.example .env
-```
+Allergy and Diet Filtering: Automatically filters recipes according to allergies and dietary restrictions.
 
-Running this application locally requires [Node.js](https://nodejs.org/) to be installed. Install dependencies for the application with:
+Customized Recipe Recommendations: Unique recipes tailored to individual taste preferences.
 
-```bash
-npm install
-```
+Interactive Cooking Assistant: Step-by-step cooking instructions and real-time voice assistance.
 
-Start the application server with:
+Nutritional Visualization: Clear nutritional breakdown presented through intuitive charts.
 
-```bash
-npm run dev
-```
+Multi-Agent System: Seamlessly integrates multiple AI agents to optimize recipe recommendation, filtering, and cooking assistance.
 
-This should start the console application on [http://localhost:3000](http://localhost:3000).
+🔧 Technologies Used
 
-This application is a minimal template that uses [express](https://expressjs.com/) to serve the React frontend contained in the [`/client`](./client) folder. The server is configured to use [vite](https://vitejs.dev/) to build the React frontend.
+Streamlit: Interactive UI framework.
 
-This application shows how to send and receive Realtime API events over the WebRTC data channel and configure client-side function calling. You can also view the JSON payloads for client and server events using the logging panel in the UI.
+React: Used for building the real-time voice-based cooking assistant.
 
-For a more comprehensive example, see the [OpenAI Realtime Agents](https://github.com/openai/openai-realtime-agents) demo built with Next.js, using an agentic architecture inspired by [OpenAI Swarm](https://github.com/openai/swarm).
+OpenAI GPT-4o-mini: AI for natural language processing.
 
-## Previous WebSockets version
+LangChain: Integration with language models.
 
-The previous version of this application that used WebSockets on the client (not recommended in browsers) [can be found here](https://github.com/openai/openai-realtime-console/tree/websockets).
+Matplotlib: Nutritional data visualization.
 
-## License
+🛠️ Setup Instructions
 
-MIT
+Step 1: Clone the Repository
+
+git clone <repository_url>
+cd <repository_directory>
+
+Step 2: Install Dependencies
+
+pip install streamlit langchain_openai openai matplotlib
+
+Step 3: Configure API Key
+Create a .env file:
+
+OPENAI_API_KEY=your_api_key_here
+
+Step 4: Run the Application
+
+streamlit run your_script_name.py
+
+The application opens automatically in your default browser.
+
+🌐 Usage
+
+Enter ingredients in the sidebar.
+
+Specify allergies, dietary, and taste preferences.
+
+Click Recommend Recipes.
+
+Select recipes for detailed cooking instructions and nutritional insights.
+
+Use the Live Cooking Assistant for hands-free cooking guidance.
+
+🎙️ Live Cooking Assistant Integration
+
+Real-time voice interface.
+
+Run your local voice-assistant server at:
+
+http://localhost:3000
+
+🌟 Acknowledgments
+
+OpenAI GPT models
+
+Streamlit and LangChain communities
